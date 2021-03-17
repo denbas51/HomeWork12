@@ -71,10 +71,10 @@ header {
   height: 1px;
   background-color: #ffe600;
 }
-header nav {
+.main-nav ul {
   display: flex;
 }
-header nav a {
+.main-nav ul li a {
   text-decoration: none;
   color: #8e8e8e;
   display: flex;
@@ -85,13 +85,17 @@ header nav a {
   align-items: center;
   border: 1px solid transparent;
 }
-header nav a:first-child {
+.main-nav ul li.active a {
   color: #131316;
   border: 1px solid #ffe600;
 }
-header nav a:hover {
+.main-nav ul li a:hover {
   color: #131316;
   border: 1px solid #ffe600;
+}
+.main-nav input,
+.main-nav label {
+  display: none;
 }
 main {
   margin: auto;
@@ -267,13 +271,19 @@ main {
   color: #ffe600;
 }
 
+.row-top {
+  display: flex;
+}
 .row-left {
-  width: 467px;
   float: left;
+  width: 467px;
 }
 .row-right {
-  width: 467px;
   float: right;
+  width: 467px;
+}
+.without {
+  margin-right: 126px;
 }
 .form-check-holder {
   float: left;
@@ -409,4 +419,7 @@ footer {
   width: 230px;
   display: flex;
   justify-content: space-between;
+}
+.preload * {
+  transition: none !important;
 }

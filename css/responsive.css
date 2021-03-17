@@ -1,0 +1,237 @@
+@media (max-width: 1186px) {
+  body {
+    min-width: 100%;
+  }
+  header,
+  .achievements,
+  .collage,
+  .footer-wrapper {
+    width: 100%;
+  }
+  header,
+  .collage,
+  .footer-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 987px) {
+  .intro-content p {
+    font-size: 1.8vw;
+  }
+  .intro-content h1 {
+    font-size: 4vw;
+  }
+  .intro-content a {
+    font-size: 1.7vw;
+    width: 24vw;
+    height: 6.4vw;
+  }
+  .main-nav ul li a {
+    font-size: 1.5vw;
+    height: 4vw;
+    width: 10vw;
+    margin-left: 1vw;
+  }
+  .achive {
+    width: 30%;
+  }
+  .achive h2 {
+    font-size: 13px;
+  }
+  .just-text h2 {
+    font-size: 2.5vw;
+  }
+  .just-text span {
+    font-size: 1.8vw;
+  }
+  .form-reg {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .without {
+    margin-right: 9vw;
+  }
+  .form-check-holder {
+    padding-right: 5vw;
+  }
+  .left {
+    font-size: 1.5vw;
+  }
+  .row-left {
+    width: 48%;
+  }
+  .row-right {
+    width: 48%;
+  }
+  .collage-wrapper {
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 807px) {
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+  .achive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    width: 50%;
+  }
+  .achive p {
+    text-align: center;
+  }
+  .form-check-holder {
+    padding-right: 3.77vw;
+  }
+}
+@media (max-width: 640px) {
+  .intro-content img {
+    margin-bottom: 40px;
+  }
+  .intro-content p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .intro-content h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .intro-content a {
+    width: 232px;
+    height: 62px;
+    font-size: 15px;
+    margin-top: 52px;
+  }
+  .main-nav input,
+  .main-nav label {
+    display: unset;
+  }
+  .main-nav input[type="checkbox"] {
+    position: absolute;
+    left: -99999px;
+    top: 0;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(0, -100vh);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .main-nav input[type="checkbox"]:checked ~ ul {
+    transform: none;
+  }
+  .main-nav ul li a {
+    font-size: 20px;
+    height: 50px;
+    width: 110px;
+  }
+  .burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 43px;
+    height: 38px;
+    background: gold;
+    z-index: 11;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .burger span {
+    width: 35px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    transition: all 0.7s ease;
+  }
+  .burger span:first-child {
+    top: 4px;
+  }
+  .burger span:nth-child(2) {
+    top: 12px;
+  }
+  .burger span:nth-child(3) {
+    top: 20px;
+  }
+  .burger span:last-child {
+    top: 28px;
+  }
+  .main-nav input[type="checkbox"]:checked + label span:first-child,
+  .main-nav input[type="checkbox"]:checked + label span:last-child {
+    opacity: 0;
+  }
+  .main-nav input[type="checkbox"]:checked + label span:nth-child(2) {
+    transform: rotate(-225deg);
+    top: 16px;
+  }
+  .main-nav input[type="checkbox"]:checked + label span:nth-child(3) {
+    transform: rotate(225deg);
+    top: 16px;
+  }
+  .achive {
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  .achive h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .heading strong {
+    font-size: 3.5vw;
+  }
+  .about-us {
+    justify-content: space-evenly;
+  }
+  .just-text h2 {
+    font-size: 23px;
+  }
+  .just-text span {
+    font-size: 3.2vw;
+  }
+  .clients {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .clients img {
+    flex-basis: 33%;
+    margin-bottom: 20px;
+  }
+  .form-reg h1 span {
+    margin-bottom: 10vw;
+  }
+  .left {
+    font-size: 15px;
+  }
+  .without {
+    margin-bottom: 30px;
+  }
+  .form-reg {
+    margin-top: 5vw;
+  }
+  .row-top {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .row-left {
+    width: 100%;
+  }
+  .row-right {
+    width: 100%;
+  }
+}

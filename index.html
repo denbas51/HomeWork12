@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"
@@ -27,12 +28,21 @@
                 <img src="svg/logo.svg" alt="" width="48" height="48" />
                 <img src="svg/logo-txt.svg" alt="" width="135" height="30" />
             </div>
-            <nav>
-                <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">CLIENTS</a>
-                <a href="#">CONTACT</a>
+            <nav class="main-nav">
+                <input type="checkbox" id="burger" />
+                <label for="burger" class="burger"
+                    ><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -139,7 +149,7 @@
                 <h1>CONTACT US<span>SURE...WE CAN TAKE SOME TIME FOR CHAT</span></h1>
                 <form action="#" class="register-form clearfix">
                     <fieldset>
-                        <div class="row-left">
+                        <div class="row-top">
                             <div class="form-check-holder">
                                 <label for="checkbox1">
                                     <input name="check" type="checkbox" id="checkbox1" />
@@ -147,18 +157,13 @@
                                     <span class="custom-checkbox"> </span>
                                 </label>
                             </div>
-                            <div class="form-check-holder">
+                            <div class="form-check-holder without">
                                 <label for="checkbox2">
                                     <input checked name="check" type="checkbox" id="checkbox2" />
                                     <span class="left">checkbox checked</span>
                                     <span class="custom-checkbox"></span>
                                 </label>
                             </div>
-                            <div class="row">
-                                <input type="text" id="input-name" placeholder="Name" />
-                            </div>
-                        </div>
-                        <div class="row-right">
                             <div class="form-check-holder">
                                 <label for="radio1">
                                     <input name="radio" type="radio" id="radio1" />
@@ -173,11 +178,18 @@
                                     <span class="custom-radio"></span>
                                 </label>
                             </div>
-                            <div class="row">
-                                <input type="email" id="input-email" placeholder="Email" />
-                            </div>
                         </div>
                         <div class="row-bottom">
+                            <div class="row-left">
+                                <div class="row">
+                                    <input type="text" id="input-name" placeholder="Name" />
+                                </div>
+                            </div>
+                            <div class="row-right">
+                                <div class="row">
+                                    <input type="email" id="input-email" placeholder="Email" />
+                                </div>
+                            </div>
                             <div class="row">
                                 <input type="text" id="input-subject" placeholder="Subject" />
                             </div>
@@ -210,5 +222,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="js/preload.js"></script>
     </body>
 </html>
